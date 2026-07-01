@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('composer') {
             steps {
-                echo 'Hello World'
+                sh composer install
             }
         }
     }
